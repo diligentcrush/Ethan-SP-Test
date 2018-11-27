@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+git_source(:github) {Ethan-SP-Test "https://github.com/diligentcrush/Ethan-SP-Test" }
+
+ruby "2.5.3"
 
 # Specify your gem's dependencies in gemfile.gemspec
 gemspec
