@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4228ED8821A12D5C00622F20 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C6F197218CEA0D00233548 /* SpotifyiOS.framework */; };
+		4238C74921A269C1005396AA /* ShareGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238C74821A269C1005396AA /* ShareGroupCollectionViewCell.swift */; };
+		4238C74C21A278C7005396AA /* RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238C74B21A278C7005396AA /* RoundCorner.swift */; };
+		427CF64C21A4D85100DFAB2F /* songClientObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CF64B21A4D85100DFAB2F /* songClientObj.swift */; };
+		427CF65121A4E16A00DFAB2F /* songClientObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CF64B21A4D85100DFAB2F /* songClientObj.swift */; };
+		427CF65221A4E17300DFAB2F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2883321A0D1B4004EFA9A /* ShareViewController.swift */; };
+		427CF65321A4E18000DFAB2F /* CoreFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CF64821A4D2F600DFAB2F /* CoreFunc.swift */; };
+		427CF65421A4E18400DFAB2F /* CoreFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427CF64821A4D2F600DFAB2F /* CoreFunc.swift */; };
+		427CF65521A4E3EF00DFAB2F /* ShareGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238C74821A269C1005396AA /* ShareGroupCollectionViewCell.swift */; };
+		427CF65621A4E41400DFAB2F /* RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238C74B21A278C7005396AA /* RoundCorner.swift */; };
+		42A1DDF921A5074400B66584 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A1DDF821A5074400B66584 /* Groups.storyboard */; };
+		42A1DDFB21A5077100B66584 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DDFA21A5077100B66584 /* GroupsTableViewController.swift */; };
+		42A1DDFE21A60D0700B66584 /* Threads.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A1DDFD21A60D0700B66584 /* Threads.storyboard */; };
+		42A1DE0021A60D1A00B66584 /* ThreadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DDFF21A60D1A00B66584 /* ThreadsTableViewController.swift */; };
+		42A1DE0421A6455600B66584 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DE0321A6455600B66584 /* Track.swift */; };
+		42A1DE0721A6580F00B66584 /* ThreadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DE0621A6580F00B66584 /* ThreadTableViewCell.swift */; };
+		42A1DE0B21A6596300B66584 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DE0A21A6596300B66584 /* CardView.swift */; };
+		42A1DE0E21A6611E00B66584 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DE0D21A6611E00B66584 /* GroupTableViewCell.swift */; };
+		42A1DE1021A669F700B66584 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DE0F21A669F700B66584 /* CircleView.swift */; };
+		42A1DE1221A66B1A00B66584 /* Timesago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1DE1121A66B1A00B66584 /* Timesago.swift */; };
+		42B2883421A0D1B4004EFA9A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2883321A0D1B4004EFA9A /* ShareViewController.swift */; };
+		42B2883B21A0D1B4004EFA9A /* SPPlayerShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42B2883121A0D1B4004EFA9A /* SPPlayerShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52AB83121252C5F283F629AD /* Pods_SPPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28A80A85EFA87A99D527AC2 /* Pods_SPPlayer.framework */; };
+		6BDBC1FC21AC9FDE00B47E7F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B2883521A0D1B4004EFA9A /* MainInterface.storyboard */; };
+		D064488363734DAEA49B7DA1 /* Pods_SPPlayerShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2AB5CE50773B3E5C097D4F /* Pods_SPPlayerShare.framework */; };
+		F9C6F186218CE9E800233548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6F185218CE9E800233548 /* AppDelegate.swift */; };
+		F9C6F188218CE9E800233548 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C6F187218CE9E800233548 /* AuthViewController.swift */; };
+		F9C6F18B218CE9E800233548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6F189218CE9E800233548 /* Main.storyboard */; };
+		F9C6F18D218CE9F100233548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C6F18C218CE9F100233548 /* Assets.xcassets */; };
+		F9C6F190218CE9F100233548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6F18E218CE9F100233548 /* LaunchScreen.storyboard */; };
+		F9C6F198218CEA0D00233548 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C6F197218CEA0D00233548 /* SpotifyiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42B2883921A0D1B4004EFA9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9C6F17A218CE9E800233548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B2883021A0D1B4004EFA9A;
+			remoteInfo = SPPlayerShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42B2883F21A0D1B4004EFA9A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42B2883B21A0D1B4004EFA9A /* SPPlayerShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04A89BC9D896EFE4EB342AC8 /* Pods-SPPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPPlayer/Pods-SPPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		4238C74821A269C1005396AA /* ShareGroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareGroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		4238C74B21A278C7005396AA /* RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorner.swift; sourceTree = "<group>"; };
+		427CF64821A4D2F600DFAB2F /* CoreFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFunc.swift; sourceTree = "<group>"; };
+		427CF64B21A4D85100DFAB2F /* songClientObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songClientObj.swift; sourceTree = "<group>"; };
+		42A1DDF821A5074400B66584 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
+		42A1DDFA21A5077100B66584 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		42A1DDFD21A60D0700B66584 /* Threads.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Threads.storyboard; sourceTree = "<group>"; };
+		42A1DDFF21A60D1A00B66584 /* ThreadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTableViewController.swift; sourceTree = "<group>"; };
+		42A1DE0321A6455600B66584 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		42A1DE0621A6580F00B66584 /* ThreadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTableViewCell.swift; sourceTree = "<group>"; };
+		42A1DE0A21A6596300B66584 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		42A1DE0D21A6611E00B66584 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		42A1DE0F21A669F700B66584 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		42A1DE1121A66B1A00B66584 /* Timesago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timesago.swift; sourceTree = "<group>"; };
+		42B2883121A0D1B4004EFA9A /* SPPlayerShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SPPlayerShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B2883321A0D1B4004EFA9A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		42B2883621A0D1B4004EFA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		42B2883821A0D1B4004EFA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B2884021A0D1C7004EFA9A /* SPPlayerShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SPPlayerShare.entitlements; sourceTree = "<group>"; };
+		42B2884121A0D1CD004EFA9A /* SPPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SPPlayer.entitlements; sourceTree = "<group>"; };
+		4B5B41F8F5E06D8DA6C11CC6 /* Pods-SPPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPPlayer/Pods-SPPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		AB2AB5CE50773B3E5C097D4F /* Pods_SPPlayerShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPPlayerShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28A80A85EFA87A99D527AC2 /* Pods_SPPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B15A269F2CE4ABC30FCABF /* Pods-SPPlayerShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPPlayerShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPPlayerShare/Pods-SPPlayerShare.debug.xcconfig"; sourceTree = "<group>"; };
+		F79C6A9524D321988CA873F8 /* Pods-SPPlayerShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPPlayerShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPPlayerShare/Pods-SPPlayerShare.release.xcconfig"; sourceTree = "<group>"; };
+		F9C6F182218CE9E800233548 /* SPPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C6F185218CE9E800233548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9C6F187218CE9E800233548 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		F9C6F18A218CE9E800233548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9C6F18C218CE9F100233548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9C6F18F218CE9F100233548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9C6F191218CE9F100233548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C6F197218CEA0D00233548 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		F9C6F199218CEA6600233548 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42B2882E21A0D1B4004EFA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4228ED8821A12D5C00622F20 /* SpotifyiOS.framework in Frameworks */,
+				D064488363734DAEA49B7DA1 /* Pods_SPPlayerShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C6F17F218CE9E800233548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C6F198218CEA0D00233548 /* SpotifyiOS.framework in Frameworks */,
+				52AB83121252C5F283F629AD /* Pods_SPPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085EDE5EB8E5C4DAFA85496D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E28A80A85EFA87A99D527AC2 /* Pods_SPPlayer.framework */,
+				AB2AB5CE50773B3E5C097D4F /* Pods_SPPlayerShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4238C74721A26997005396AA /* CustomCollectionCellClasses */ = {
+			isa = PBXGroup;
+			children = (
+				4238C74821A269C1005396AA /* ShareGroupCollectionViewCell.swift */,
+			);
+			path = CustomCollectionCellClasses;
+			sourceTree = "<group>";
+		};
+		4238C74A21A278AC005396AA /* CustomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4238C74B21A278C7005396AA /* RoundCorner.swift */,
+			);
+			path = CustomeView;
+			sourceTree = "<group>";
+		};
+		427CF64A21A4D82A00DFAB2F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				427CF64B21A4D85100DFAB2F /* songClientObj.swift */,
+				42A1DE0321A6455600B66584 /* Track.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		427CF65721A4E93000DFAB2F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F9C6F187218CE9E800233548 /* AuthViewController.swift */,
+				F9C6F189218CE9E800233548 /* Main.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		42A1DDF721A5072B00B66584 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				42A1DE0C21A660FD00B66584 /* CustomCell */,
+				42A1DDF821A5074400B66584 /* Groups.storyboard */,
+				42A1DDFA21A5077100B66584 /* GroupsTableViewController.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		42A1DDFC21A60CEA00B66584 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				42A1DE0521A657F100B66584 /* CustomCell */,
+				42A1DDFD21A60D0700B66584 /* Threads.storyboard */,
+				42A1DDFF21A60D1A00B66584 /* ThreadsTableViewController.swift */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		42A1DE0521A657F100B66584 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				42A1DE0621A6580F00B66584 /* ThreadTableViewCell.swift */,
+				42A1DE0A21A6596300B66584 /* CardView.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		42A1DE0C21A660FD00B66584 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				42A1DE0D21A6611E00B66584 /* GroupTableViewCell.swift */,
+				42A1DE0F21A669F700B66584 /* CircleView.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		42B2883221A0D1B4004EFA9A /* SPPlayerShare */ = {
+			isa = PBXGroup;
+			children = (
+				4238C74A21A278AC005396AA /* CustomeView */,
+				4238C74721A26997005396AA /* CustomCollectionCellClasses */,
+				42B2884021A0D1C7004EFA9A /* SPPlayerShare.entitlements */,
+				42B2883321A0D1B4004EFA9A /* ShareViewController.swift */,
+				42B2883521A0D1B4004EFA9A /* MainInterface.storyboard */,
+				42B2883821A0D1B4004EFA9A /* Info.plist */,
+			);
+			path = SPPlayerShare;
+			sourceTree = "<group>";
+		};
+		DE2EEC76033AAE2919DB7565 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04A89BC9D896EFE4EB342AC8 /* Pods-SPPlayer.debug.xcconfig */,
+				4B5B41F8F5E06D8DA6C11CC6 /* Pods-SPPlayer.release.xcconfig */,
+				E7B15A269F2CE4ABC30FCABF /* Pods-SPPlayerShare.debug.xcconfig */,
+				F79C6A9524D321988CA873F8 /* Pods-SPPlayerShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9C6F179218CE9E800233548 = {
+			isa = PBXGroup;
+			children = (
+				F9C6F184218CE9E800233548 /* SPPlayer */,
+				F9C6F197218CEA0D00233548 /* SpotifyiOS.framework */,
+				42B2883221A0D1B4004EFA9A /* SPPlayerShare */,
+				F9C6F183218CE9E800233548 /* Products */,
+				DE2EEC76033AAE2919DB7565 /* Pods */,
+				085EDE5EB8E5C4DAFA85496D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9C6F183218CE9E800233548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9C6F182218CE9E800233548 /* SPPlayer.app */,
+				42B2883121A0D1B4004EFA9A /* SPPlayerShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9C6F184218CE9E800233548 /* SPPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				42B2884121A0D1CD004EFA9A /* SPPlayer.entitlements */,
+				F9C6F185218CE9E800233548 /* AppDelegate.swift */,
+				427CF64821A4D2F600DFAB2F /* CoreFunc.swift */,
+				42A1DE1121A66B1A00B66584 /* Timesago.swift */,
+				427CF64A21A4D82A00DFAB2F /* Objects */,
+				42A1DDF721A5072B00B66584 /* Groups */,
+				42A1DDFC21A60CEA00B66584 /* Threads */,
+				427CF65721A4E93000DFAB2F /* Auth */,
+				F9C6F18C218CE9F100233548 /* Assets.xcassets */,
+				F9C6F18E218CE9F100233548 /* LaunchScreen.storyboard */,
+				F9C6F191218CE9F100233548 /* Info.plist */,
+				F9C6F199218CEA6600233548 /* Bridging-Header.h */,
+			);
+			path = SPPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42B2883021A0D1B4004EFA9A /* SPPlayerShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B2883E21A0D1B4004EFA9A /* Build configuration list for PBXNativeTarget "SPPlayerShare" */;
+			buildPhases = (
+				D6E50A033690E349763ED346 /* [CP] Check Pods Manifest.lock */,
+				42B2882D21A0D1B4004EFA9A /* Sources */,
+				42B2882E21A0D1B4004EFA9A /* Frameworks */,
+				42B2882F21A0D1B4004EFA9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPPlayerShare;
+			productName = SPPlayerShare;
+			productReference = 42B2883121A0D1B4004EFA9A /* SPPlayerShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F9C6F181218CE9E800233548 /* SPPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9C6F194218CE9F100233548 /* Build configuration list for PBXNativeTarget "SPPlayer" */;
+			buildPhases = (
+				4A7E828FBEBC0BE0BB407C53 /* [CP] Check Pods Manifest.lock */,
+				F9C6F17E218CE9E800233548 /* Sources */,
+				F9C6F17F218CE9E800233548 /* Frameworks */,
+				F9C6F180218CE9E800233548 /* Resources */,
+				1AD14F6D9AB9A67F9EA7A968 /* [CP] Embed Pods Frameworks */,
+				42B2883F21A0D1B4004EFA9A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42B2883A21A0D1B4004EFA9A /* PBXTargetDependency */,
+			);
+			name = SPPlayer;
+			productName = SPPlayer;
+			productReference = F9C6F182218CE9E800233548 /* SPPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9C6F17A218CE9E800233548 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Estamp;
+				TargetAttributes = {
+					42B2883021A0D1B4004EFA9A = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F9C6F181218CE9E800233548 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F9C6F17D218CE9E800233548 /* Build configuration list for PBXProject "SPPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9C6F179218CE9E800233548;
+			productRefGroup = F9C6F183218CE9E800233548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9C6F181218CE9E800233548 /* SPPlayer */,
+				42B2883021A0D1B4004EFA9A /* SPPlayerShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42B2882F21A0D1B4004EFA9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BDBC1FC21AC9FDE00B47E7F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C6F180218CE9E800233548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A1DDF921A5074400B66584 /* Groups.storyboard in Resources */,
+				42A1DDFE21A60D0700B66584 /* Threads.storyboard in Resources */,
+				F9C6F190218CE9F100233548 /* LaunchScreen.storyboard in Resources */,
+				F9C6F18D218CE9F100233548 /* Assets.xcassets in Resources */,
+				F9C6F18B218CE9E800233548 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AD14F6D9AB9A67F9EA7A968 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SPPlayer/Pods-SPPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPPlayer/Pods-SPPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A7E828FBEBC0BE0BB407C53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E50A033690E349763ED346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPPlayerShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42B2882D21A0D1B4004EFA9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4238C74921A269C1005396AA /* ShareGroupCollectionViewCell.swift in Sources */,
+				427CF65121A4E16A00DFAB2F /* songClientObj.swift in Sources */,
+				42B2883421A0D1B4004EFA9A /* ShareViewController.swift in Sources */,
+				427CF65421A4E18400DFAB2F /* CoreFunc.swift in Sources */,
+				4238C74C21A278C7005396AA /* RoundCorner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C6F17E218CE9E800233548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C6F188218CE9E800233548 /* AuthViewController.swift in Sources */,
+				42A1DE0421A6455600B66584 /* Track.swift in Sources */,
+				42A1DDFB21A5077100B66584 /* GroupsTableViewController.swift in Sources */,
+				F9C6F186218CE9E800233548 /* AppDelegate.swift in Sources */,
+				427CF65621A4E41400DFAB2F /* RoundCorner.swift in Sources */,
+				427CF65521A4E3EF00DFAB2F /* ShareGroupCollectionViewCell.swift in Sources */,
+				42A1DE0021A60D1A00B66584 /* ThreadsTableViewController.swift in Sources */,
+				42A1DE0721A6580F00B66584 /* ThreadTableViewCell.swift in Sources */,
+				42A1DE1221A66B1A00B66584 /* Timesago.swift in Sources */,
+				427CF65221A4E17300DFAB2F /* ShareViewController.swift in Sources */,
+				427CF65321A4E18000DFAB2F /* CoreFunc.swift in Sources */,
+				42A1DE0B21A6596300B66584 /* CardView.swift in Sources */,
+				42A1DE0E21A6611E00B66584 /* GroupTableViewCell.swift in Sources */,
+				42A1DE1021A669F700B66584 /* CircleView.swift in Sources */,
+				427CF64C21A4D85100DFAB2F /* songClientObj.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42B2883A21A0D1B4004EFA9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B2883021A0D1B4004EFA9A /* SPPlayerShare */;
+			targetProxy = 42B2883921A0D1B4004EFA9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42B2883521A0D1B4004EFA9A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42B2883621A0D1B4004EFA9A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		F9C6F189218CE9E800233548 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9C6F18A218CE9E800233548 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9C6F18E218CE9F100233548 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9C6F18F218CE9F100233548 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42B2883C21A0D1B4004EFA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B15A269F2CE4ABC30FCABF /* Pods-SPPlayerShare.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SPPlayerShare/SPPlayerShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UL2A87AQ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SPPlayerShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uwaves.sptest.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SPPlayer/Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42B2883D21A0D1B4004EFA9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79C6A9524D321988CA873F8 /* Pods-SPPlayerShare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SPPlayerShare/SPPlayerShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UL2A87AQ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SPPlayerShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uwaves.sptest.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SPPlayer/Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9C6F192218CE9F100233548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9C6F193218CE9F100233548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9C6F195218CE9F100233548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A89BC9D896EFE4EB342AC8 /* Pods-SPPlayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SPPlayer/SPPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UL2A87AQ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SPPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uwaves.sptest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPPlayer/Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9C6F196218CE9F100233548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5B41F8F5E06D8DA6C11CC6 /* Pods-SPPlayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SPPlayer/SPPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8UL2A87AQ4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SPPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uwaves.sptest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPPlayer/Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42B2883E21A0D1B4004EFA9A /* Build configuration list for PBXNativeTarget "SPPlayerShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B2883C21A0D1B4004EFA9A /* Debug */,
+				42B2883D21A0D1B4004EFA9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9C6F17D218CE9E800233548 /* Build configuration list for PBXProject "SPPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C6F192218CE9F100233548 /* Debug */,
+				F9C6F193218CE9F100233548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9C6F194218CE9F100233548 /* Build configuration list for PBXNativeTarget "SPPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C6F195218CE9F100233548 /* Debug */,
+				F9C6F196218CE9F100233548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9C6F17A218CE9E800233548 /* Project object */;
+}

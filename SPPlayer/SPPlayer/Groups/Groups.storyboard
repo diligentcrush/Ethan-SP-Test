@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dE6-Ws-KSG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Groups Table View Controller-->
+        <scene sceneID="GxO-bu-sPc">
+            <objects>
+                <tableViewController storyboardIdentifier="groupsTVC" id="dE6-Ws-KSG" customClass="GroupsTableViewController" customModule="SPPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KlA-ED-n6v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="groupCell" rowHeight="140" id="iwD-tc-lpX" customClass="GroupTableViewCell" customModule="SPPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iwD-tc-lpX" id="XG1-m3-dL8">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="139.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xE-Eo-Awh">
+                                            <rect key="frame" x="87" y="35" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="travis sccot- song name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGy-cx-RQ8">
+                                            <rect key="frame" x="87" y="87" width="165.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF4-kC-i8J">
+                                            <rect key="frame" x="269" y="11" width="64" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ3-nM-oWk" customClass="CircleView" customModule="SPPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="9" y="35" width="70" height="70"/>
+                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="IVh-IG-URE"/>
+                                                <constraint firstAttribute="height" constant="70" id="o4I-B4-1ji"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RJ3-nM-oWk" firstAttribute="centerY" secondItem="XG1-m3-dL8" secondAttribute="centerY" id="0MZ-lw-vfn"/>
+                                        <constraint firstItem="eGy-cx-RQ8" firstAttribute="leading" secondItem="RJ3-nM-oWk" secondAttribute="trailing" constant="8" id="7Ud-pP-AHa"/>
+                                        <constraint firstItem="vF4-kC-i8J" firstAttribute="top" secondItem="XG1-m3-dL8" secondAttribute="topMargin" id="8yQ-SX-ppX"/>
+                                        <constraint firstItem="6xE-Eo-Awh" firstAttribute="leading" secondItem="RJ3-nM-oWk" secondAttribute="trailing" constant="8" id="VaT-Dq-gEu"/>
+                                        <constraint firstItem="eGy-cx-RQ8" firstAttribute="bottom" secondItem="RJ3-nM-oWk" secondAttribute="bottom" id="XuB-su-r4P"/>
+                                        <constraint firstItem="RJ3-nM-oWk" firstAttribute="leading" secondItem="XG1-m3-dL8" secondAttribute="leading" constant="9" id="h8M-pP-qWT"/>
+                                        <constraint firstItem="6xE-Eo-Awh" firstAttribute="top" secondItem="RJ3-nM-oWk" secondAttribute="top" id="iZ8-U0-N11"/>
+                                        <constraint firstItem="vF4-kC-i8J" firstAttribute="trailing" secondItem="XG1-m3-dL8" secondAttribute="trailingMargin" id="k1c-2p-1Y0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="groupName" destination="6xE-Eo-Awh" id="orP-Q4-8E8"/>
+                                    <outlet property="initial" destination="RJ3-nM-oWk" id="f0S-Fs-Moi"/>
+                                    <outlet property="songDataPreview" destination="eGy-cx-RQ8" id="EF1-ww-R4I"/>
+                                    <outlet property="timestamp" destination="vF4-kC-i8J" id="bGF-mu-OhM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dE6-Ws-KSG" id="GHS-qj-fdm"/>
+                            <outlet property="delegate" destination="dE6-Ws-KSG" id="CNT-JU-JFC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCZ-Uf-ww4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.19999999999999" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+</document>

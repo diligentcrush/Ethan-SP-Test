@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LNz-qB-KdK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Threads Table View Controller-->
+        <scene sceneID="21W-oJ-DAR">
+            <objects>
+                <tableViewController storyboardIdentifier="threadsTVC" id="LNz-qB-KdK" customClass="ThreadsTableViewController" customModule="SPPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Rb-AP-kZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="threadsCell" rowHeight="129" id="52Y-BA-Jgh" customClass="ThreadTableViewCell" customModule="SPPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="129"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="52Y-BA-Jgh" id="RdL-h0-Hc9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82i-sI-0Mz" customClass="CardView" customModule="SPPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="11" width="343" height="107"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N3t-PG-aSO">
+                                                    <rect key="frame" x="8" y="12" width="83" height="83"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="gKd-mN-1fM"/>
+                                                        <constraint firstAttribute="height" constant="83" id="ryC-ta-oy9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20W-SX-TwA">
+                                                    <rect key="frame" x="99" y="12" width="244" height="83"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.98075256870000005" green="0.98427671699999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="N3t-PG-aSO" firstAttribute="leading" secondItem="82i-sI-0Mz" secondAttribute="leading" constant="8" id="85z-ga-dbW"/>
+                                                <constraint firstItem="20W-SX-TwA" firstAttribute="leading" secondItem="N3t-PG-aSO" secondAttribute="trailing" constant="8" id="IKE-Xj-H7J"/>
+                                                <constraint firstAttribute="trailing" secondItem="20W-SX-TwA" secondAttribute="trailing" id="JiT-Y2-nYT"/>
+                                                <constraint firstItem="20W-SX-TwA" firstAttribute="height" secondItem="N3t-PG-aSO" secondAttribute="height" id="aCy-eZ-pBR"/>
+                                                <constraint firstItem="20W-SX-TwA" firstAttribute="centerY" secondItem="N3t-PG-aSO" secondAttribute="centerY" id="faa-US-2b3"/>
+                                                <constraint firstItem="N3t-PG-aSO" firstAttribute="centerY" secondItem="82i-sI-0Mz" secondAttribute="centerY" id="gwc-48-RNE"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="82i-sI-0Mz" firstAttribute="top" secondItem="RdL-h0-Hc9" secondAttribute="topMargin" id="8H0-wO-Dbn"/>
+                                        <constraint firstItem="82i-sI-0Mz" firstAttribute="leading" secondItem="RdL-h0-Hc9" secondAttribute="leadingMargin" id="nCr-ds-1xk"/>
+                                        <constraint firstItem="82i-sI-0Mz" firstAttribute="bottom" secondItem="RdL-h0-Hc9" secondAttribute="bottomMargin" id="skL-ux-OOy"/>
+                                        <constraint firstItem="82i-sI-0Mz" firstAttribute="trailing" secondItem="RdL-h0-Hc9" secondAttribute="trailingMargin" id="vPA-Gr-zhc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="threadMsg" destination="20W-SX-TwA" id="1C4-Rw-HVm"/>
+                                    <outlet property="trackImg" destination="N3t-PG-aSO" id="vRq-mN-Wgh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LNz-qB-KdK" id="xrZ-jg-Ejp"/>
+                            <outlet property="delegate" destination="LNz-qB-KdK" id="AhM-YT-yGh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XEg-6w-uuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="156.97151424287858"/>
+        </scene>
+    </scenes>
+</document>
