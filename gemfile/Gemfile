@@ -1,0 +1,12 @@
+source "https://rubygems.org"
+
+git_source(:github) {Ethan-SP-Test "https://github.com/diligentcrush/Ethan-SP-Test" }
+
+ruby "2.5.3"
+
+gem "rspec-core"
+gem "git", github: "diligentcrush/Ethan-SP-Test", branch: "master"
+gem "heroku-hatchet"
+
+# Specify your gem's dependencies in gemfile.gemspec
+gemspec
